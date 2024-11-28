@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.status-badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.status-available {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-occupied {
+  @apply bg-red-100 text-red-800;
+}
+
+.status-maintenance {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.hotel-card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl;
+}
+
+.hotel-card img {
+  @apply w-full h-64 object-cover transition-transform duration-300;
+}
+
+.hotel-card:hover img {
+  @apply transform scale-105;
+}
+
+.amenity-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-50 text-primary-700 mr-2 mb-2;
+}
+
+.quick-action-card {
+  @apply bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-1;
+}
+
+.dashboard-stat-card {
+  @apply bg-white rounded-lg shadow-lg p-6;
+}
+
+.stat-label {
+  @apply text-gray-600 text-sm mb-1;
+}
+
+.stat-value {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+/* Material overrides */
+.mat-mdc-card {
+  @apply border-0 shadow-lg;
+}
+
+.mat-mdc-form-field {
+  @apply w-full;
+}
+
+.mat-mdc-tab-group {
+  @apply bg-white rounded-lg shadow-lg;
+}
+
+.mat-mdc-button-base {
+  @apply font-medium;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  @apply bg-primary-600 hover:bg-primary-700;
+}
